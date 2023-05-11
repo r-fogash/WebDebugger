@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Platform-iOS15-green)
 
 # Web Debugger
-An app for viwing the RAW HTML code of a web page on iOS.
+An app for viewing the RAW HTML code of a web page on iOS.
 
 ![](Resources/previrew.gif)
 
