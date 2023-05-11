@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LogRequestHeaderCollectionViewCell" customModule="WebInspector" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9fN-wJ-6gT">
+                        <rect key="frame" x="20" y="0.0" width="340" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="EXH-46-cJ3">
+                                <rect key="frame" x="0.0" y="2.5" width="22" height="35"/>
+                                <color key="tintColor" name="regularTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="pjo-xX-wfq"/>
+                                </constraints>
+                                <imageReference key="image" image="arrow.forward" catalog="system" symbolScale="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="https://google.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esI-VI-jNd">
+                                <rect key="frame" x="42" y="0.0" width="267.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" name="regularTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZ7-PM-AZv">
+                                <rect key="frame" x="329.5" y="3" width="10.5" height="34"/>
+                                <color key="tintColor" name="control_tint"/>
+                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="T6F-n9-lcI"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="log_header_background"/>
+            <constraints>
+                <constraint firstItem="9fN-wJ-6gT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0ou-De-Fya"/>
+                <constraint firstAttribute="bottom" secondItem="9fN-wJ-6gT" secondAttribute="bottom" id="GkW-Qn-jLx"/>
+                <constraint firstItem="9fN-wJ-6gT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="LFA-0h-AG6"/>
+                <constraint firstAttribute="trailing" secondItem="9fN-wJ-6gT" secondAttribute="trailing" constant="20" id="wMw-ar-R13"/>
+            </constraints>
+            <size key="customSize" width="612" height="114"/>
+            <connections>
+                <outlet property="disclosureImageView" destination="cZ7-PM-AZv" id="TRn-su-GlS"/>
+                <outlet property="domainLabel" destination="esI-VI-jNd" id="huV-8a-dQw"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="104.46428571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="95"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <namedColor name="control_tint">
+            <color red="1" green="0.58099997043609619" blue="0.16599999368190765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="log_header_background">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="regularTextColor">
+            <color red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
