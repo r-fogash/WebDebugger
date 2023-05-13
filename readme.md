@@ -5,7 +5,7 @@
 # Web Debugger
 An app for viewing the RAW HTML code of a web page on iOS.
 
-![](Resources/previrew.gif)
+![Presentaion gif Loading...](Resources/previrew.gif)
 
 Features:
 - basing browser with navigation
